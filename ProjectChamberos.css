@@ -1,0 +1,74 @@
+body {
+	background-color: lightgray;
+}
+button{
+	color: whitesmoke;
+}
+.centered {
+	text-align: center;
+	padding: 40px;
+}
+.explorer{
+	width: 20%;
+	height: 25px;
+	float: left;
+	margin: 0 20px 0 20px;
+}	
+form{
+	text-align: center;
+	width: 400px;
+	height: 400px;
+	margin: 0 33.33333% 0 33.33333%;
+	border: 2px solid orangered;
+	background-color: lightsalmon;
+	color: white;
+}
+section{
+	background-color: orangered;
+	border: 2px solid orangered;
+	text-align: center;
+	color: white;
+	margin: 0 0 5 0;
+	
+}
+h3 {
+	color: orangered;
+	text-align: center;
+	vertical-align: 50%;
+}
+.background-orangered {
+	background-color: orangered;
+}
+ul{
+	list-style-position:inside
+}
+nav.main_menu {
+    position: relative;
+    left: auto;
+    float: right;
+}
+nav.main_menu ul li {
+    display: inline-block;
+	position: relative;
+    padding: 0px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+nav.main_menu ul {
+    list-style: outside none none;
+}
+.header_inner_right {
+    float: right;
+    position: relative;
+    z-index: 110;
+}
+nav.main_menu.right > ul {
+    left: auto;
+}
+.container {
+    position: relative;
+    padding: 0px;
+    width: 100%;
+    z-index: 100;
+}
