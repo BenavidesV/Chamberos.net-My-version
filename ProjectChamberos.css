@@ -1,15 +1,23 @@
 body {
 	background-color: lightgray;
 }
-button{
+.button{
 	color: whitesmoke;
+	background-color: darkorange;
+	padding: 1%;
+	margin: 10%;
+	font-weight: bold;
 }
 .explorer{
 	width: 20%;
 	height: 25px;
 	float: left;
 	margin: 0 20px 0 20px;
-}	
+}
+div img{
+	float: left;
+	margin: 0 8%;
+}
 form.login{
 	text-align: center;
 	width: 400px;
@@ -24,36 +32,55 @@ section{
 	border: 2px solid orangered;
 	text-align: center;
 	color: white;
-	margin: 0 0 5 0;
+	margin: 0 0 30% 0;
 	
 }
 h3 {
 	color: orangered;
 	text-align: center;
-	vertical-align: 50%;
+	margin: 4% 0;
 }
 .background-orangered {
 	background-color: orangered;
+}
+a {
+	text-decoration: none;
 }
 <!--DASHBOARD-->
 nav{
 	padding: 2%;
 	margin: 10px;
 }
+header div img{
+	width: 80%;
+} 
 .container {
-    width: 1100px;
+    width: 100%;
     margin: 0px auto;
+	height: 18%;
+	background-color: #FF6600;
+	padding: 10px;
+}
+.second-container {
+    width: 100%;
+	text-align: right;
+    margin: 0px auto;
+	height: 40%;
+	padding: 2%;
+	float: right;
 }
 .logo{
-	width: 235px;
-	height: 270px;
+	width: 5%;
+	height: auto;
 	float: left;
+	margin: 1px 0 0 30px;
 }
 nav.main-menu.right {
-    position: relative;
     left: auto;
     float: right;
-	width: 50%;
+	width: 70%;
+	height: 100%;
+	background-color: #FF6600;
 }
 nav.main-menu.right > ul {
     left: auto;
@@ -61,20 +88,78 @@ nav.main-menu.right > ul {
 ul{
 	list-style-position:inside
 }
+#selected{
+	color: #FF6600;
+	background-color: white;
+	border: 2px dashed;
+}
 
 nav.main-menu ul li {
     display: inline-block;
-	position: relative;
-    padding: 0px;
-    margin: 10px;
+    margin: 0px 2%;
     background-repeat: no-repeat;
     background-position: right center;
-	background-color: orangered;
-	border: 2px solid orangered;
+	border: 2px dashed white;
 	text-align: center;
 	color: white;
-	margin: 0 10 0 10;
+	text-decoration: none;
+	width: 25%;
+	height: 43%;
+	
 }
 nav.main-menu ul {
     list-style: outside none none;
+}
+ul li span{
+	vertical-align: middle;
+	position: relative;
+}
+section.middle{
+	float: left;
+	vertical-align: middle;
+	text-align: center;
+	margin: 0 1% 0.5% 1%;
+	background-color: transparent;
+	border-color: transparent;
+}
+section.middle span{
+	text-align: center;
+	margin: 0 10% 10% 5%;
+	color: black;
+	
+}
+div.big-header{
+	margin: 10% 25%;
+	width: 100%;
+}
+<!--My clients-->
+.my-clients{
+	border: 1px solid #FF6600;
+	caption-side: top;
+	background-color: yellowgreen;
+}
+table{
+	clear: both;
+	text-align: center;
+	border-collapse: separate;
+	width: 100%;
+	margin: 5% 3% 3% 1%;
+}
+th{
+	border-collapse: collapse;
+	background-color: seagreen;
+	height: auto;
+	color: white;
+}
+#id-column{
+	text-align: center;
+	width: 15%;
+}
+#fullname-column{
+	text-align: center;
+	width: 45%;
+}
+#action-column{
+	text-align: center;
+	width: 10%;
 }
