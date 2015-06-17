@@ -4,9 +4,9 @@ body {
 .button{
 	color: whitesmoke;
 	background-color: darkorange;
-	padding: 1%;
-	margin: 10%;
 	font-weight: bold;
+	margin:5% 10% 2% 0;
+	position: relative;
 }
 .explorer{
 	width: 20%;
@@ -14,7 +14,7 @@ body {
 	float: left;
 	margin: 0 20px 0 20px;
 }
-div img{
+div.logo img{
 	float: left;
 	margin: 0 8%;
 }
@@ -40,20 +40,23 @@ h3 {
 	text-align: center;
 	margin: 4% 0;
 }
-.background-orangered {
-	background-color: orangered;
-}
 a {
 	text-decoration: none;
+}
+span{
+	vertical-align: middle;
 }
 <!--DASHBOARD-->
 nav{
 	padding: 2%;
 	margin: 10px;
 }
-header div img{
+header div.logo img{
 	width: 80%;
-} 
+}
+header div{
+	position: relative;
+}
 .container {
     width: 100%;
     margin: 0px auto;
@@ -61,23 +64,26 @@ header div img{
 	background-color: #FF6600;
 	padding: 10px;
 }
+#right{
+	float: right;
+	width: 12%;
+}
 .second-container {
     width: 100%;
-	text-align: right;
     margin: 0px auto;
-	height: 40%;
-	padding: 2%;
-	float: right;
+	height: auto;
+	padding: 1%;
+	float: left;
 }
 .logo{
 	width: 5%;
 	height: auto;
 	float: left;
-	margin: 1px 0 0 30px;
+	margin: 1px 5% 0 30px;
 }
 nav.main-menu.right {
     left: auto;
-    float: right;
+    float: left;
 	width: 70%;
 	height: 100%;
 	background-color: #FF6600;
@@ -163,3 +169,8 @@ th{
 	text-align: center;
 	width: 10%;
 }
+#new{
+	width: 12%;
+	height: auto;
+}
+
