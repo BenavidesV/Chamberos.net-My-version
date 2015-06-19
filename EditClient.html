@@ -1,7 +1,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Chamberos.net-Clients Administration</title>
+		<title>Chamberos.net- New Client</title>
 		<link rel="stylesheet" href="ProjectChamberos.css">
 	</head>
 	<header id="main-header" class="container">
@@ -34,39 +34,27 @@
 					<img src="users2.png">
 				</div>
 				<div>
-					<span>CLIENTS</span>
+					<span>EDIT CLIENT</span>
 				</div>
 				<div id="right">
 					<a class="button" id="new" href="NewClient.html"><span>NEW CLIENT</span></a>
 				</div>
 			</div>
 		</div>
-		<table class="my-clients">
-			<tr>
-				<th id="id-column">ID</th>
-				<th id="fullname-column">Fullname</th>
-				<th id="id-column">Teléfono</th>
-				<th id="action-column">Actions</th>
-			</tr>
-			<tr>
-				<td>203470357</td>
-				<td>Juan Serrano</td>
-				<td>84122112</td>
-				<td>
-					<a href="EditClient.html"><img src="edit.png"></a>
-					<a href="DeleteClient.html"><img src="delete.png"></a>
-				</td>
-			</tr>
-			<tr>
-				<td>204570355</td>
-				<td>Jose Ruiz</td>
-				<td>87147112</td>
-				<td>
-					<a href="EditClient.html"><img src="edit.png"></a>
-					<a href="DeleteClient.html"><img src="delete.png"></a>
-				</td>
-			</tr>
-		</table>
+		<div class="form">
+			<form>First name:
+				<input type="text" value="Bladimir">
+				<br>Last name:
+				<input type="text" value="Arroyo">
+				<br>Personal ID
+				<input type="text" value="201110222">
+				<br>Phone
+				<input type="tel" value="506 88888889">
+				<br>
+				<a href="clients.html"><input type="reset" value="Cancel" class="half"></a>
+				<a href="SaveClient.html"><input type="submit" value="Save" class="half"></a>
+			</form>
+		</div>
 	</body>
 
 </html>
