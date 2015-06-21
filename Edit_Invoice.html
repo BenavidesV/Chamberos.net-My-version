@@ -1,0 +1,68 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Chamberos.net-Clients Administration</title>
+		<link rel="stylesheet" href="ProjectChamberos.css">
+	</head>
+	<header id="main-header" class="container">
+		<div class="logo">
+			<a href="dashboard.html"><img src="chamberos-logo-mobile.png"></a>
+		</div>
+		<nav class="main-menu right">
+			<ul>
+				<li>
+					<a href="login.html" title="Clients"><span>Clients</span></a>
+				</li>
+				<li>
+					<a href="#" title="Chambas"><span>Chambas</span></a>
+				</li>
+				<li id="selected">
+					<a href="#" title="Invoices"><span>Invoices</span></a>
+				</li>
+			</ul>
+		</nav>
+		<div id="user">
+			<span>Hi User</span>
+			<img src="user.png">
+			<a href="login.html"><img src="exit.png"></a>
+		</div>
+	</header>
+	<body>
+		<div class="second-container">
+			<div>
+				<div>
+					<img src="icon-clipboard-256.png" class="smaller">
+				</div>
+				<div>
+					<span>NEW INVOICE</span>
+				</div>
+				<div id="right">
+					<a class="button" id="new" href="NewInvoice.html"><span>NEW INVOICE</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="size-form">
+			<form class="form">
+				<h3>Cliente</h3>
+				<input list="clients" placeholder="Select the client name with a double click" value="Eduardo Li">
+				<datalist id="clients">
+					<option value="Juan Serrano"></option>
+					<option value="Jose Ruiz"></option>
+					<option value="Eduardo Li"></option>
+					<option value="Juan Cayaso"></option>
+				</datalist>
+				<h3>Descripcion del trabajo</h3>
+				<input type="textarea" placeholder="Job description" value="Printer inspection"/>
+				<h3>Fecha</h3>
+				<input type="date" data-datepicker="{format:'DD.MM.YYYY'}" value="15/03/2015">
+				<h3>Monto</h3>
+				<input type="number" min=0 placeholder="Amount" value="3500"/>
+				<div>
+					<a href="update_invoice.html" class="button" id="green"><span>SAVE</span></a>
+					<a href="invoices.html" class="button" id="red"><span>CANCEL</span></a>
+				</div>
+			</form>
+		</div>
+	</body>
+
+</html>

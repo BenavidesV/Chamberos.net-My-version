@@ -10,13 +10,13 @@
 		</div>
 		<nav class="main-menu right">
 			<ul>
-				<li id="selected">
+				<li>
 					<a href="login.html" title="Clients"><span>Clients</span></a>
 				</li>
 				<li>
 					<a href="#" title="Chambas"><span>Chambas</span></a>
 				</li>
-				<li>
+				<li id="selected">
 					<a href="invoices.html" title="Invoices"><span>Invoices</span></a>
 				</li>
 			</ul>
@@ -31,53 +31,57 @@
 		<div class="second-container">
 			<div>
 				<div>
-					<img src="users2.png">
+					<img src="icon-clipboard-256.png" class="smaller">
 				</div>
 				<div>
-					<span>CLIENTS</span>
+					<span> INVOICES</span>
 				</div>
 				<div id="right">
-					<a class="button" id="new" href="NewClient.html"><span>NEW CLIENT</span></a>
+					<a class="button" id="new" href="NewInvoice.html"><span>NEW INVOICE</span></a>
 				</div>
 			</div>
 		</div>
-		<table class="my-clients">
+		<table class="my-tables">
 			<tr>
-				<th id="id-column">ID</th>
-				<th id="fullname-column">Fullname</th>
-				<th id="id-column">Teléfono</th>
+				<th id="id-column">Invoice number</th>
+				<th id="id-column">Date</th>
+				<th id="fullname-column">Client</th>
+				<th id="action-column">Mount</th>
 				<th id="action-column">Actions</th>
 			</tr>
 			<tr>
-				<td>203470357</td>
-				<td>Juan Serrano</td>
-				<td>84122112</td>
-				<td>
-					<a href="EditClient.html"><img src="edit.png"></a>
-					<a href="DeleteClient.html"><img src="delete.png"></a>
-				</td>
-			</tr>
-			<tr>
-				<td>204570355</td>
+				<td>5544</td>
+				<td>10/03/2015</td>
 				<td>Jose Ruiz</td>
-				<td>87147112</td>
+				<td>24.000</td>
 				<td>
-					<a href="EditClient.html"><img src="edit.png"></a>
-					<a href="DeleteClient.html"><img src="delete.png"></a>
+					<a href="Edit_invoice.html"><img src="edit.png"></a>
+					<a href="Delete_Invoice.html"><img src="delete.png"></a>
 				</td>
 			</tr>
 			<tr>
-				<td>502440874</td>
-				<td>Juan Cayaso</td>
-				<td>66554412</td>
+				<td>5546</td>
+				<td>10/04/2015</td>
+				<td>Jose Ruiz</td>
+				<td>26.000</td>
 				<td>
-					<a href="EditClient.html"><img src="edit.png"></a>
-					<a href="DeleteClient.html"><img src="delete.png"></a>
+					<a href="Edit_invoice.html"><img src="edit.png"></a>
+					<a href="Delete_Invoice.html"><img src="delete.png"></a>
+				</td>
+			</tr>
+			<tr>
+				<td>5547</td>
+				<td>12/04/2015</td>
+				<td>Juan Cayaso</td>
+				<td>21.500</td>
+				<td>
+					<a href="Edit_Invoice.html"><img src="edit.png"></a>
+					<a href="Delete_Invoice.html"><img src="delete.png"></a>
 				</td>
 			</tr>
 		</table>
 		<div>
-			<h4>The user was added succesfully</h4>
+			<h4>The information was updated succesfully</h4>
 		</div>
 	</body>
 
