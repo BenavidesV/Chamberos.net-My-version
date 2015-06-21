@@ -1,7 +1,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Chamberos.net- New Client</title>
+		<title>Chamberos.net-Clients Administration</title>
 		<link rel="stylesheet" href="ProjectChamberos.css">
 	</head>
 	<header id="main-header" class="container">
@@ -34,26 +34,41 @@
 					<img src="users2.png">
 				</div>
 				<div>
-					<span>EDIT CLIENT</span>
+					<span>CLIENTS</span>
 				</div>
 				<div id="right">
 					<a class="button" id="new" href="NewClient.html"><span>NEW CLIENT</span></a>
 				</div>
 			</div>
 		</div>
-		<div class="form">
-			<form>First name:
-				<input type="text" value="Bladimir">
-				<br>Last name:
-				<input type="text" value="Arroyo">
-				<br>Personal ID
-				<input type="text" value="201110222">
-				<br>Phone
-				<input type="tel" value="506 88888889">
-				<br>
-				<a href="Clients.html" class="button" id="red">Cancel</a>
-				<a href="updateclient.html" class="button" id="green">Save</a>
-			</form>
+		<table class="my-clients">
+			<tr>
+				<th id="id-column">ID</th>
+				<th id="fullname-column">Fullname</th>
+				<th id="id-column">Teléfono</th>
+				<th id="action-column">Actions</th>
+			</tr>
+			<tr>
+				<td>204570355</td>
+				<td>Jose Ruiz</td>
+				<td>87147112</td>
+				<td>
+					<a href="EditClient.html"><img src="edit.png"></a>
+					<a href="DeleteClient.html"><img src="delete.png"></a>
+				</td>
+			</tr>
+			<tr>
+				<td>502440874</td>
+				<td>Juan Cayaso</td>
+				<td>66554412</td>
+				<td>
+					<a href="EditClient.html"><img src="edit.png"></a>
+					<a href="DeleteClient.html"><img src="delete.png"></a>
+				</td>
+			</tr>
+		</table>
+		<div>
+			<h4>The information was updated succesful</h4>
 		</div>
 	</body>
 
