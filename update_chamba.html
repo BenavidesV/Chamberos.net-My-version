@@ -1,7 +1,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Chamberos.net-Clients Administration</title>
+		<title>Chamberos.net-Chambas Administration</title>
 		<link rel="stylesheet" href="ProjectChamberos.css">
 	</head>
 	<header id="main-header" class="container">
@@ -10,10 +10,10 @@
 		</div>
 		<nav class="main-menu right">
 			<ul>
-				<li id="selected">
+				<li>
 					<a href="login.html" title="Clients"><span>Clients</span></a>
 				</li>
-				<li>
+				<li id="selected">
 					<a href="chambas.html" title="Chambas"><span>Chambas</span></a>
 				</li>
 				<li>
@@ -31,35 +31,47 @@
 		<div class="second-container">
 			<div>
 				<div>
-					<img src="users2.png">
+					<img src="leather_folder_brown4.png" class="smaller">
 				</div>
 				<div>
-					<span>CLIENTS</span>
+					<span>CHAMBAS</span>
 				</div>
 				<div id="right">
-					<a class="button" id="new" href="NewClient.html"><span>NEW CLIENT</span></a>
+					<a class="button" id="new" href="NewChamba.html"><span>NEW CHAMBA</span></a>
 				</div>
 			</div>
 		</div>
-		<table class="my-tables">
+		<table class="my-clients">
 			<tr>
-				<th id="id-column">ID</th>
-				<th id="fullname-column">Fullname</th>
-				<th id="id-column">Phone</th>
+				<th id="id-column">Invoice #</th>
+				<th id="id-column">Client</th>
+				<th id="fullname-column">Description</th>
+				<th id="id-column">Date</th>
 				<th id="action-column">Actions</th>
 			</tr>
 			<tr>
-				<td>203470357</td>
+				<td>2034</td>
 				<td>Juan Serrano</td>
-				<td>84122112</td>
+				<td>House Painting</td>
+				<td>22/10/2014</td>
 				<td>
-					<a href="EditClient.html"><img src="edit.png"></a>
-					<a href="DeleteClient.html"><img src="delete.png"></a>
+					<a href="Edit_Chamba.html"><img src="edit.png"></a>
+					<a href="Delete_Chamba.html"><img src="delete.png"></a>
+				</td>
+			</tr>
+			<tr>
+				<td>2046</td>
+				<td>Jose Ruiz</td>
+				<td>Floor demolition</td>
+				<td>23/10/2014</td>
+				<td>
+					<a href="Edit_Chamba.html"><img src="edit.png"></a>
+					<a href="Delete_Chamba.html"><img src="delete.png"></a>
 				</td>
 			</tr>
 		</table>
 		<div>
-			<h4>The user was deleted succesfully</h4>
+			<h4>The information was updated succesfully</h4>
 		</div>
 	</body>
 
