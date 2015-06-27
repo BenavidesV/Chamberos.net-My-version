@@ -1,7 +1,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Chamberos.net-Clients Administration</title>
+		<title>Chamberos.net- New Client</title>
 		<link rel="stylesheet" href="ProjectChamberos.css">
 	</head>
 	<header id="main-header" class="container">
@@ -11,7 +11,7 @@
 		<nav class="main-menu right">
 			<ul>
 				<li id="selected">
-					<a href="clients.html" title="Clients"><span>Clients</span></a>
+					<a href="login.html" title="Clients"><span>Clients</span></a>
 				</li>
 				<li>
 					<a href="chambas.html" title="Chambas"><span>Chambas</span></a>
@@ -34,39 +34,27 @@
 					<img src="users2.png">
 				</div>
 				<div>
-					<span>CLIENTS</span>
+					<span>EDIT CLIENT</span>
 				</div>
 				<div id="right">
 					<a class="button" id="new" href="new_client.html"><span>NEW CLIENT</span></a>
 				</div>
 			</div>
 		</div>
-		<table class="my-tables">
-			<tr>
-				<th id="id-column">ID</th>
-				<th id="fullname-column">Fullname</th>
-				<th id="id-column">Phone</th>
-				<th id="action-column">Actions</th>
-			</tr>
-			<tr>
-				<td>203470357</td>
-				<td>Juan Serrano</td>
-				<td>84122112</td>
-				<td>
-					<a href="edit_client.html"><img src="edit.png"></a>
-					<a href="delete_client.html"><img src="delete.png"></a>
-				</td>
-			</tr>
-			<tr>
-				<td>204570355</td>
-				<td>Jose Ruiz</td>
-				<td>87147112</td>
-				<td>
-					<a href="edit_client.html"><img src="edit.png"></a>
-					<a href="delete_client.html"><img src="delete.png"></a>
-				</td>
-			</tr>
-		</table>
+		<div class="form">
+			<form>First name:
+				<input type="text" value="Bladimir">
+				<br>Last name:
+				<input type="text" value="Arroyo">
+				<br>Personal ID
+				<input type="text" value="201110222">
+				<br>Phone
+				<input type="tel" value="506 88888889">
+				<br>
+				<a href="clients.html" class="button" id="red">Cancel</a>
+				<a href="update_client.html" class="button" id="green">Save</a>
+			</form>
+		</div>
 	</body>
 
 </html>

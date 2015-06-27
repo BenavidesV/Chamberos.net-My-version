@@ -1,7 +1,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Chamberos.net-Chambas Administration</title>
+		<title>Chamberos.net-Clients Administration</title>
 		<link rel="stylesheet" href="ProjectChamberos.css">
 	</head>
 	<header id="main-header" class="container">
@@ -10,10 +10,10 @@
 		</div>
 		<nav class="main-menu right">
 			<ul>
-				<li>
+				<li id="selected">
 					<a href="login.html" title="Clients"><span>Clients</span></a>
 				</li>
-				<li id="selected">
+				<li>
 					<a href="chambas.html" title="Chambas"><span>Chambas</span></a>
 				</li>
 				<li>
@@ -31,47 +31,53 @@
 		<div class="second-container">
 			<div>
 				<div>
-					<img src="leather_folder_brown4.png" class="smaller">
+					<img src="users2.png">
 				</div>
 				<div>
-					<span>CHAMBAS</span>
+					<span>CLIENTS</span>
 				</div>
 				<div id="right">
-					<a class="button" id="new" href="new_chamba.html"><span>NEW CHAMBA</span></a>
+					<a class="button" id="new" href="new_client.html"><span>NEW CLIENT</span></a>
 				</div>
 			</div>
 		</div>
 		<table class="my-clients">
 			<tr>
-				<th id="id-column">Invoice #</th>
-				<th id="id-column">Client</th>
-				<th id="fullname-column">Description</th>
-				<th id="id-column">Date</th>
+				<th id="id-column">ID</th>
+				<th id="fullname-column">Fullname</th>
+				<th id="id-column">Phone</th>
 				<th id="action-column">Actions</th>
 			</tr>
 			<tr>
-				<td>2034</td>
+				<td>203470357</td>
 				<td>Juan Serrano</td>
-				<td>House Painting</td>
-				<td>22/10/2014</td>
+				<td>84122112</td>
 				<td>
-					<a href="edit_chamba.html"><img src="edit.png"></a>
-					<a href="delete_chamba.html"><img src="delete.png"></a>
+					<a href="edit_client.html"><img src="edit.png"></a>
+					<a href="delete_client.html"><img src="delete.png"></a>
 				</td>
 			</tr>
 			<tr>
-				<td>2046</td>
+				<td>204570355</td>
 				<td>Jose Ruiz</td>
-				<td>Floor demolition</td>
-				<td>23/10/2014</td>
+				<td>87147112</td>
 				<td>
-					<a href="edit_chamba.html"><img src="edit.png"></a>
-					<a href="delete_chamba.html"><img src="delete.png"></a>
+					<a href="edit_client.html"><img src="edit.png"></a>
+					<a href="delete_client.html"><img src="delete.png"></a>
+				</td>
+			</tr>
+			<tr>
+				<td>502440874</td>
+				<td>Juan Cayaso</td>
+				<td>66554412</td>
+				<td>
+					<a href="edit_client.html"><img src="edit.png"></a>
+					<a href="delete_client.html"><img src="delete.png"></a>
 				</td>
 			</tr>
 		</table>
 		<div>
-			<h4>The information was updated succesfully</h4>
+			<h4>The user was added succesfully</h4>
 		</div>
 	</body>
 

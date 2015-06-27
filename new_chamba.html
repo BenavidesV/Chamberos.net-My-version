@@ -11,7 +11,7 @@
 		<nav class="main-menu right">
 			<ul>
 				<li>
-					<a href="login.html" title="Clients"><span>Clients</span></a>
+					<a href="clients.html" title="Clients"><span>Clients</span></a>
 				</li>
 				<li id="selected">
 					<a href="chambas.html" title="Chambas"><span>Chambas</span></a>
@@ -34,44 +34,34 @@
 					<img src="leather_folder_brown4.png" class="smaller">
 				</div>
 				<div>
-					<span>CHAMBAS</span>
+					<span>NEW CHAMBA</span>
 				</div>
 				<div id="right">
 					<a class="button" id="new" href="new_chamba.html"><span>NEW CHAMBA</span></a>
 				</div>
 			</div>
 		</div>
-		<table class="my-clients">
-			<tr>
-				<th id="id-column">Invoice #</th>
-				<th id="id-column">Client</th>
-				<th id="fullname-column">Description</th>
-				<th id="id-column">Date</th>
-				<th id="action-column">Actions</th>
-			</tr>
-			<tr>
-				<td>2034</td>
-				<td>Juan Serrano</td>
-				<td>House Painting</td>
-				<td>22/10/2014</td>
-				<td>
-					<a href="edit_chamba.html"><img src="edit.png"></a>
-					<a href="delete_chamba.html"><img src="delete.png"></a>
-				</td>
-			</tr>
-			<tr>
-				<td>2046</td>
-				<td>Jose Ruiz</td>
-				<td>Floor demolition</td>
-				<td>23/10/2014</td>
-				<td>
-					<a href="edit_chamba.html"><img src="edit.png"></a>
-					<a href="delete_chamba.html"><img src="delete.png"></a>
-				</td>
-			</tr>
-		</table>
-		<div>
-			<h4>The information was updated succesfully</h4>
+		<div class="size-form">
+			<form class="form">
+				<h3>Client</h3>
+				<input list="clients" placeholder="Select the client name with a double click">
+				<datalist id="clients">
+					<option value="Juan Serrano"></option>
+					<option value="Jose Ruiz"></option>
+					<option value="Eduardo Li"></option>
+					<option value="Juan Cayaso"></option>
+				</datalist>
+				<h3>Description</h3>
+				<textarea id="description" placeholder="Job description"></textarea>
+				<h3>Date</h3>
+				<input type="date" data-datepicker="{format:'DD.MM.YYYY'}">
+				<h3>Notes</h3>
+				<input type="text" min=0 placeholder="Additional info" />
+				<div>
+					<a href="add_chambas.html" class="button" id="green"><span>SAVE</span></a>
+					<a href="chambas.html" class="button" id="red"><span>CANCEL</span></a>
+				</div>
+			</form>
 		</div>
 	</body>
 

@@ -1,7 +1,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Chamberos.net-Clients Administration</title>
+		<title>Chamberos.net-New Invoice</title>
 		<link rel="stylesheet" href="ProjectChamberos.css">
 	</head>
 	<header id="main-header" class="container">
@@ -44,7 +44,7 @@
 		<div class="size-form">
 			<form class="form">
 				<h3>Cliente</h3>
-				<input list="clients" placeholder="Select the client name with a double click" value="Eduardo Li">
+				<input list="clients" placeholder="Select the client name with a double click">
 				<datalist id="clients">
 					<option value="Juan Serrano"></option>
 					<option value="Jose Ruiz"></option>
@@ -52,13 +52,13 @@
 					<option value="Juan Cayaso"></option>
 				</datalist>
 				<h3>Descripcion del trabajo</h3>
-				<input type="textarea" placeholder="Job description" value="Printer inspection"/>
+				<input type="textarea" placeholder="Job description" />
 				<h3>Fecha</h3>
-				<input type="date" data-datepicker="{format:'DD.MM.YYYY'}" value="15/03/2015">
+				<input type="date" data-datepicker="{format:'DD.MM.YYYY'}">
 				<h3>Monto</h3>
-				<input type="number" min=0 placeholder="Amount" value="3500"/>
+				<input type="number" min=0 placeholder="Amount" />
 				<div>
-					<a href="update_invoice.html" class="button" id="green"><span>SAVE</span></a>
+					<a href="add_invoices.html" class="button" id="green"><span>SAVE</span></a>
 					<a href="invoices.html" class="button" id="red"><span>CANCEL</span></a>
 				</div>
 			</form>
